@@ -16,7 +16,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -37,9 +36,8 @@ jobs:
         with:
           # Message that should be printed in the pull request
           message: # optional
-          # Path of the file that should be commented
+            Bonjour ${{ vars.PRENOM }} ${{ secrets.NOM }} 
           file-path: # optional
           # Github token of the repository (automatically created by Github)
           github-token: ${{ secrets.GITHUB_TOKEN }}
-            echo Bonjour ${{ vars.PRENOM }} ${{ secrets.NOM }} 
           # You can set some reactions on your comments through the `reactions` input.
