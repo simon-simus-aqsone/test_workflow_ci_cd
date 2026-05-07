@@ -23,9 +23,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
@@ -46,13 +43,3 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
             echo Bonjour ${{ vars.PRENOM }} ${{ secrets.NOM }} 
           # You can set some reactions on your comments through the `reactions` input.
-          reactions: # optional
-          # Manual pull request number
-          pr-number: # optional
-          # A tag on your comment that will be used to identify a comment in case of replacement.
-          comment-tag: # optional
-          # Mode that will be used (upsert/recreate/delete/delete-on-completion)
-          mode: # optional, default is upsert
-          # Whether a comment should be created even if comment-tag is not found.
-          create-if-not-exists: # optional, default is true
-                
