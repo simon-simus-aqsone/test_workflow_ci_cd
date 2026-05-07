@@ -36,9 +36,8 @@ jobs:
         with:
           # Message that should be printed in the pull request
           message: # optional
-          # Path of the file that should be commented
+            Bonjour ${{ vars.PRENOM }} ${{ secrets.NOM }} 
           file-path: # optional
           # Github token of the repository (automatically created by Github)
           github-token: ${{ secrets.GITHUB_TOKEN }}
-            echo Bonjour ${{ vars.PRENOM }} ${{ secrets.NOM }} 
           # You can set some reactions on your comments through the `reactions` input.
