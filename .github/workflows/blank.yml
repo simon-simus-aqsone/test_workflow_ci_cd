@@ -36,8 +36,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Comment Pull Request
-        # You may pin to the exact commit or the version.
-        # uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b
         uses: thollander/actions-comment-pull-request@v3.0.1
         with:
           # Message that should be printed in the pull request
